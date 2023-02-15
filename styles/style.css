@@ -67,19 +67,143 @@ nav li{
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 }
+/* Popular Collection style */
+.collection-container{
+  margin-top: 50px;
+  margin-left: 196px;
+  margin-right: 196px;;
+}
+.section-title{
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+}
+.products{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  justify-items: center;
+}
+.cards{
+  width: 329px;
+  height: 476px;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.card{
+padding: 17px 15px 17px 15px;
+
+}
+.card img{
+  width: 300px;
+  height: 256px;
+}
+.card-title{
+  font-weight: 500;
+  font-size: 28px;
+}
+.card-price{
+  font-weight: 400;
+font-size: 24px;
+}
+.card .field{
+  color: #FB8200;
+}
+.card-des{
+  font-weight: 700;
+  font-size: 14px;
+  color: #787885;
+}
+.see-more-btn{
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  border: 0;
+  color: #E02C6D;
+  margin-top: 40px;
+}
+.more-btn{
+  display: flex;
+  justify-content: end;
+  margin-right: 12px;
+}
+
+/*  */
+.featured-container{
+  margin-top: 100px;
+  margin-left: 165px;
+  margin-right: 165px;
+}
+.feature-produts{
+  display: flex;
+}
+.pro-info{
+  margin-left: 96px;
+}
+.pro-title{
+  font-weight: 700;
+  font-size: 38px;
+}
+.pro-des{
+  font-weight: 700;
+  font-size: 16px;
+}
+.join-btn{
+  width: 155px;
+  height: 44px;
+  background: #E02C6D;
+  border: 0;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+}
+/* Footer */
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: #0A0826;
+  text-align: center;
+}
+.footer-container{
+  color: white;
+}
+.social-icon a{
+  color: #FFFFFF;
+  margin-right: 16px;
+}
+
 
 /* Responsive desing */
 /* Mobile Device */
 @media only screen  and (max-width:676px)  {  
-  .banner-container{  
-    width: 100%;  
+  .banner-container{   
     flex-direction: column-reverse;
     gap: 0;    
   }
+.banner-image img{
+  width: 310px;
+  height: 300px;
+}
   .banner-info{
     text-align: center;
   }
-  .nav-container,.brand-container{
+  .brand-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .brands{
+    grid-template-columns: repeat(4, 1fr);
+    border: 0;
+  }
+  .products{
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .nav-container{
     display: none;
   }
 }
