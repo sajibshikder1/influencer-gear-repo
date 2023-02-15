@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Cinzel+Decorative&family=Mandali&family=Open+Sans&family=Oxygen&family=Philosopher&family=Poppins:wght@400;500&family=Quicksand&family=Roboto:wght@400;500&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFFFFF;
+}
+
+/* Navbar styles */
+.header{
+margin: 0 120px 0 120px;
+}
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+}
+nav li{
+  list-style: none;
+  margin-left: 34px;
+  font-weight: 600;
+  font-size: 16px;
+}
+/* header banner styles */
+
+.banner-container{
+  display: flex;
+  gap: 133px;
+  justify-content: center;
+  align-items: center;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 52px;
+}
+.banner-description{
+  font-weight: 600;
+  font-size: 16px;
+}
+.prebook-btn{
+  width: 196px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  border: 0;
+  padding: 10px;
+  background-color: #E02C6D;
+  border-radius: 41px;
+  color: #FFFFFF;
+}
+.banner-container img{
+  width: 440px;
+  height: 414px;
+}
+
+/* Brands styles */
+.brand-container{
+  margin: 107px 165px 0 165px;
+}
+.brands{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  padding: 35px 60px 35px 60px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+/* Responsive desing */
+/* Mobile Device */
+@media only screen  and (max-width:676px)  {  
+  .banner-container{  
+    width: 100%;  
+    flex-direction: column-reverse;
+    gap: 0;    
+  }
+  .banner-info{
+    text-align: center;
+  }
+  .nav-container,.brand-container{
+    display: none;
+  }
+}
